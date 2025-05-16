@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+}
+
+.circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: default;
+}
+
+/*.circle#player {
+    background-color: lightcoral;
+    z-index: 10;
+    transition: left 0.1s ease-out, top 0.1s ease-out;
+}*/ /* 플레이어 원 스타일 제거 또는 주석 처리 */
+
+.invincible-item {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 15;
+}
+
+.invincible {
+    border: 3px solid gold; /* 무적 상태일 때 테두리 (이미지에도 적용될 수 있음) */
+}
+
+#game-over-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 20;
+}
+
+#game-over-screen h2 {
+    margin-top: 0;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.hidden {
+    display: none !important;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>트랄랄레로 트랄랄라의 모험</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="player-container" style="position: absolute;">
+            <img id="player" src="img.png" style="width: 32.5px; height: 32.5px; display: block;">
+            <span id="player-number-display" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); color: white; font-size: 14px; font-weight: bold; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">5</span>
+        </div>
+    </div>
+    <div id="game-over-screen" class="hidden">
+        <h2>게임 오버</h2>
+        <p>최종 점수: <span id="final-score"></span></p>
+        <button id="restart-button">재시작</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
